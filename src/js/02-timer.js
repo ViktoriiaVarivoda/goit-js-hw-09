@@ -62,11 +62,8 @@ buttonStart.addEventListener('click', () => {
       hours.textContent = addLeadingZero(timeObject.hours);
       minutes.textContent = addLeadingZero(timeObject.minutes);
       seconds.textContent = addLeadingZero(timeObject.seconds);
-      if (countdown <= 10000) {
-        timerT.style.background = 'blue';
-      }
     } else {
-         timerT.style.background = 'yellow';
+      timerT.style.background = 'yellow';
       clearInterval(timer);
     }
   }, );
